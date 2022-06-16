@@ -9,11 +9,19 @@
  */
 void bring_line(char **lineptr, size_t *n, char *buffer, size_t j)
 {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2b13904075e5757a878e3bbcc4deccec67e606ad
 	if (*lineptr == NULL)
 	{
 		if  (j > BUFSIZE)
 			*n = j;
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> 2b13904075e5757a878e3bbcc4deccec67e606ad
 		else
 			*n = BUFSIZE;
 		*lineptr = buffer;
@@ -46,13 +54,21 @@ ssize_t get_line(char **lineptr, size_t *n, FILE *stream)
 	ssize_t retval;
 	char *buffer;
 	char t = 'z';
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> 2b13904075e5757a878e3bbcc4deccec67e606ad
 	if (input == 0)
 		fflush(stream);
 	else
 		return (-1);
 	input = 0;
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> 2b13904075e5757a878e3bbcc4deccec67e606ad
 	buffer = malloc(sizeof(char) * BUFSIZE);
 	if (buffer == 0)
 		return (-1);
